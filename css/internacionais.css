@@ -74,7 +74,7 @@
     background-color: darkred;
 }
 
-@media(max-width: 768px){
+@media(max-width: 812px){
     .news{margin: 0; width: 100%;margin-bottom: 20px;}
     .news figure figcaption{font-size: 3.3vw;}
     .news p{font-size: 3.3vw;}
@@ -100,4 +100,4 @@ td, th {
 tr:nth-child(even) {
     background-color: #000;
 }
-@media(max-width: 768px){table{font-size: 3.3vw;}}
+@media(max-width: 812px){table{font-size: 3.3vw;}}

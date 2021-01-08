@@ -72,7 +72,7 @@ table p{
     }
 
     main h1{
-        width: 100%;
+        font-size: 4.8vw;
     }
 
     .t1{
@@ -104,6 +104,10 @@ table p{
 }
 
 @media only screen and (max-width: 414px){
+    main h1{
+        font-size: 6vw;
+    }
+    
     .botao{
         width: 22%;
     }

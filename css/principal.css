@@ -3,9 +3,69 @@ main{
     margin-left: 10%;
 }
 
+.t1{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.t2{
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.t1 img, .t2 img{
+    width: 100%;
+}
+
+main p{
+    font-family: monospace;
+    font-size: 2.5vw;
+    color: red;
+    text-shadow: 3px 3px 3px black;
+}
+
+main p:hover{
+    color: darkred;
+}
+
+.t3{
+    height: 470px;
+}
+
+.t4{
+    height: 0px;
+}
+
 @media only screen and (max-width: 812px){
     main{
         width: 100%;
         margin-left: 0%;
+    }
+
+    .t1, .t2{
+        float: none;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .t3, .t4{
+        height: 50px;
+    }
+
+    main p{
+        font-size: 5.2vw;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .t3, .t4{
+        height: 25px;
+    }
+
+    main p{
+        font-size: 6vw; 
     }
 }

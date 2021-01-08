@@ -1,9 +1,43 @@
+main{
+    width: 80%;
+    margin-left: 10%;
+}
+
+main h1{
+    text-align: center;
+    color: darkred;
+    font-family: monospace;
+    font-size: 5vw;
+    text-shadow: 3px 3px 3px black;
+}
+
+main .i1 img{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    position: relative;
+}
+
+main .i2 img{
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+    position: relative;
+}
+
+main .t1{
+    display: none;
+}
+
+main .t2{
+    height: 30px;
+}
+
 .wrap-news{
     width: 100%;
-    /*background-color: rgba(61, 59, 59, 0.233);*/
 }
 .wrap-news h2{
-    font-family: 'Cuprum', sans-serif;
+    font-family: monospace;
     font-size: 6vw;
     text-transform: uppercase;
     color: #f2f2f2;
@@ -11,7 +45,7 @@
     padding: 16px 14px;
 }
 .wrap-news h3{
-    font-family: 'Great Vibes', cursive;
+    font-family: monospace;
     font-size: 5vw;
     background-color: #0000002a;
     color: #f74848be;
@@ -21,7 +55,7 @@
     margin-bottom: 20px;
 }
 .wrap-news h4{
-    font-family: 'Cuprum', sans-serif;
+    font-family: monospace;
     font-size: 3vw;
     color: darkgray;
     text-align: center;
@@ -39,33 +73,23 @@
     object-fit: cover;
 }
 .news figure figcaption{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;
     padding: 16px 14px;
     font-size: 1.8vw;
     text-indent: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: darkgray;
     text-align: justify;
 }
-.news p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 16px 14px;
-    font-size: 1.8vw;
-    text-indent: 50px;
-    letter-spacing: 2px;
-    color: darkgray;
-    text-align: justify;
-}
-@media(max-width: 768px){
+@media(max-width: 812px){
     .news{margin: 0; width: 100%;margin-bottom: 20px;}
     .news figure figcaption{font-size: 3.3vw;}
-    .news p{font-size: 3.3vw;}
     .wrap-news h2{font-size: 10vw;}
     .wrap-news h3{font-size: 7vw;}
     .wrap-news h4{font-size: 5vw;}
 }
 table {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;
     padding: 16px 14px;
     font-size: 1.8vw;
     margin-top: 7vh;
@@ -73,7 +97,7 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-caption{font-family: 'Cuprum', sans-serif; letter-spacing: 4px;}
+caption{font-family: monospace; letter-spacing: 1px;}
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -82,20 +106,45 @@ td, th {
 tr:nth-child(even) {
     background-color: #000;
 }
-@media(max-width: 768px){table{font-size: 3.3vw;}}
-.pag-2{text-align: center;margin: 50px;}
-.pag-2 a{
-    font-family: 'Cuprum', sans-serif;
+
+.pag{text-align: center;margin: 5%;}
+.pag a{
+    font-family: monospace;
     text-decoration: none;
-    letter-spacing: 4px;
-    padding: 16px 14px;
+    letter-spacing: 1px;
+    padding: 12px 12px;
     color: #f2f2f2;
     text-transform: uppercase;
     background-color: rgb(199, 13, 13);
     border-radius: 5px;
     text-align: center;
 }
-.pag-2 a:hover{
+.pag a:hover{
     transition: 0.5s;
     background-color: darkred;
+}
+
+@media(max-width: 812px){
+    table{
+        font-size: 3.3vw;
+    }
+    .pag{
+        margin: 10%
+    }
+    main{
+        width: 100%;
+        margin-left: 0%;
+    }
+    main h1{
+        font-size: 7vw;
+    }
+    main .i1 img, main .i2 img{
+        float: none;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+    main .t1{
+        display: block;
+    }
 }

@@ -75,6 +75,10 @@ label{
     display: block;
 }
 
+#int a{
+    font-size: 1.4vw;
+}
+
 .seta-baixo::after{
     content: "";
     display: inline-block;
@@ -191,10 +195,12 @@ footer{
     }
 
     .menu li li a:hover{
-        /*color: white;
-        background-color: darkgray;*/
         color: black;
         background-color: white;
+    }
+
+    #int a{
+        font-size: 6vw;
     }
 
     .menu ul ul{
@@ -236,6 +242,10 @@ footer{
 
     .menu li a{
         width: 75vw;
+        font-size: 7vw;
+    }
+
+    #int a{
         font-size: 7vw;
     }
 

@@ -1,6 +1,7 @@
 main{
     width: 80%;
     margin-left: 10%;
+    height: 100%;
 }
 
 .barra{
@@ -75,6 +76,14 @@ main p{
 }
 
 @media only screen and (max-width: 414px){
+    main h1{
+        font-size: 12vw;
+    }
+
+    main h2{
+        font-size: 7vw;
+    }
+
     main p{
         font-size: 4vw;
     }
