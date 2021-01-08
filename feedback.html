@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feedback</title>
+    <link rel="shortcut icon" href="imagens/logotipo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/feedback.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span class="seta-baixo">News</span>
+                    <ul>
+                        <li><a href="nacionais.html">Nacionais</a></li>
+                        <li><a href="internacionais.html">Internacionais</a></li>
+                    </ul>
+                </li>
+                <li><span class="seta-baixo">Top 10</span>
+                    <ul>
+                        <li><a href="top10-mais-rapidos.html">Os Mais Rápidos</a></li>
+                        <li><a href="top10-mais-raros.html">Os Mais Raros</a></li>
+                        <li><a href="top10-mais-caros.html">Os Mais Caros</a></li>
+                    </ul>
+                </li>
+                <li><span class="seta-baixo">Mídia</span>
+                    <ul>
+                        <li><a href="wallpapers.html">Wallpapers</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Games</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+            </ul>
+        </nav>
+        <div class="logo1">
+            <img src="imagens/logotipo.png" alt="logotipo">
+        </div><br><br>
+        <main>
+            <div class="wrap-p">
+                <h1>FeedBack</h1>
+                <p>Gostariamos de saber sua opinião e sujestões para o blog</p>
+            </div>
+            <div class="wrap-form">
+                <form class="form" method="GET">
+                    <div class="row">
+                        <div class="col-25">
+                            <span class="span-form">Nome:</span>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <span class="span-form">E-mail:</span>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <span class="span-form">País:</span>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="Brasil">Brasil</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Reino Unido">Reino Unido</option>
+                                <option value="China">China</option>
+                                <option value="Japão">Japão</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Canadá">Canadá</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <span class="span-form">Comentário:</span>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Comentário" style="height: 200px"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" onclick="Enviar()" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="fmenu">
+            <a>Noticias</a>
+            <a href="nacionais.html">Nacionais</a>
+            <a href="internacionais.html">Internacionais</a>
+        </div>
+        <div class="fmenu">
+            <a>Top 10</a>
+            <a href="top10-mais-rapidos.html">Os Mais Rápidos</a>
+            <a href="top10-mais-raros.html">Os Mais Raros</a>
+            <a href="top10-mais-caros.html">Os Mais Caros</a>
+        </div>
+        <div class="fmenu">
+            <a>Mídia</a>
+            <a href="wallpapers.html">Wallpapers</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="fmenu">
+            <a>Games</a>
+            <a href="history.html">History</a>
+            <a href="sobre-nos.html">Sobre nós</a>
+            <a href="feedback.html">FeedBack</a>
+        </div>
+    </footer>
+</body>
+
+</html>
