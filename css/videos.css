@@ -1,39 +1,34 @@
-main{
+main {
     width: 80%;
     margin-left: 10%;
     text-align: center;
 }
 
-main table{
+main table {
     width: 100%;
 }
 
-main table img{
+main table img {
     width: 100%;
 }
 
-main table th{
+main table th {
     width: 50%;
 }
 
-.txt1{
+.txt1 {
     color: white;
     font-size: 3vw;
     font-family: monospace;
 }
 
-.txt2{
+.txt2 {
     color: white;
     font-size: 2.5vw;
     font-family: monospace;
 }
 
-video{
-    width: 100%;
-    height: auto;
-}
-
-.barra{
+.barra {
     width: 100%;
     height: 30px;
     background-color: rgba(38, 38, 38, 0.8);
@@ -41,9 +36,13 @@ video{
     border-bottom: 5px solid white;
 }
 
-@media only screen and (max-width: 812px){
-    main{
+@media only screen and (max-width: 812px) {
+    main {
         width: 100%;
         margin-left: 0%;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
