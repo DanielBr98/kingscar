@@ -1,0 +1,101 @@
+.wrap-news{
+    width: 100%;
+    /*background-color: rgba(61, 59, 59, 0.233);*/
+}
+.wrap-news h2{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 14px;
+}
+.wrap-news h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vw;
+    background-color: #0000002a;
+    color: #f74848be;
+    text-align: center;
+    padding: 16px 14px;
+    border-bottom: 0.3em solid rgba(201, 184, 184, 0.26);
+    margin-bottom: 20px;
+}
+.wrap-news h4{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 3vw;
+    color: darkgray;
+    text-align: center;
+    padding: 16px 14px;
+}
+.news{
+    width: 90%;
+    margin-left: 5vw;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+.news figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.news figure figcaption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 16px 14px;
+    font-size: 1.8vw;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    color: darkgray;
+    text-align: justify;
+}
+.news p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 16px 14px;
+    font-size: 1.8vw;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    color: darkgray;
+    text-align: justify;
+}
+@media(max-width: 768px){
+    .news{margin: 0; width: 100%;margin-bottom: 20px;}
+    .news figure figcaption{font-size: 3.3vw;}
+    .news p{font-size: 3.3vw;}
+    .wrap-news h2{font-size: 10vw;}
+    .wrap-news h3{font-size: 7vw;}
+    .wrap-news h4{font-size: 5vw;}
+}
+table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 16px 14px;
+    font-size: 1.8vw;
+    margin-top: 7vh;
+    color: darkgray;
+    border-collapse: collapse;
+    width: 100%;
+}
+caption{font-family: 'Cuprum', sans-serif; letter-spacing: 4px;}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #000;
+}
+@media(max-width: 768px){table{font-size: 3.3vw;}}
+.pag-2{text-align: center;margin: 50px;}
+.pag-2 a{
+    font-family: 'Cuprum', sans-serif;
+    text-decoration: none;
+    letter-spacing: 4px;
+    padding: 16px 14px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    background-color: rgb(199, 13, 13);
+    border-radius: 5px;
+    text-align: center;
+}
+.pag-2 a:hover{
+    transition: 0.5s;
+    background-color: darkred;
+}

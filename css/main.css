@@ -1,0 +1,257 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(../imagens/black-background_00313351.jpg);
+    background-size: 100% auto;
+}
+
+label{
+    margin: -10px -40px 0 0;
+    line-height: 40px;
+    display: none;
+    float: left;
+    color: white;
+    margin-left: 2%;
+    text-shadow: 4px 4px 4px black;
+}
+
+#toggle{
+    display: none;
+}
+
+.menu{
+    float: left;
+    text-align: center;
+    position: fixed;
+    z-index: 9998;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+    width: 12vw;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-family: monospace;
+    transition: 0.3s;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu li a{
+    float: left;
+    width: 12vw;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    font-family: monospace;
+    transition: 0.3s;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu li:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.seta-baixo::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 0; 
+    height: 0;
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.seta-baixo:hover:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 0; 
+    height: 0;
+  
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+
+.logo1{
+    text-align: center;
+}
+
+.logo1 img{
+    width: 30%;
+    height: auto;
+    margin-top: 4%;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 1em solid rgba(201, 184, 184, 0.26);
+    margin-top: 20px;
+}
+.fmenu{width: 100%;margin: 25px 0 0 0;}
+.fmenu a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 14px;
+    letter-spacing: 4px;
+    font-family: monospace;
+    font-size: 14pt;
+    color: #f2f2f2;
+}
+.fmenu a:hover{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.fmenu a:nth-child(1){font-weight: bold; color: darkred;}
+.fmenu:last-child{
+    background-color: darkgray;
+}
+.fmenu:last-child > a{
+    color: #000;
+    border: none;
+    font-weight: normal;
+    letter-spacing: 0px;
+    padding: 20px 18px;
+    font-family: monospace;
+    font-size: 1.8em;
+}
+@media only screen and (max-width: 812px){
+    label{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        z-index: 9999;
+        font-size: 50px;
+        margin-top: 12px;
+        width: 6%;
+    }
+
+    #toggle:checked + .menu li{
+        display: block;
+    }
+
+    .menu{
+        overflow: auto;
+        height: 100%;
+        width: auto;
+    }
+
+    .menu li{
+        width: 65vw;
+        font-size: 6vw;
+        display: none;
+        float: none;
+        background-color: rgba(38, 38, 38, 0.9);
+    }
+
+    .menu li a{
+        width: 65vw;
+        font-size: 6vw;
+        float: none;
+        display: block;
+    }
+
+    .menu li li{
+        background-color: gray;
+    }
+
+    .menu li:hover{
+        color: white;
+        background-color: rgba(38, 38, 38, 0.9);
+    }
+
+    .menu li li a:hover{
+        /*color: white;
+        background-color: darkgray;*/
+        color: black;
+        background-color: white;
+    }
+
+    .menu ul ul{
+        display: block;
+    }
+
+    .seta-baixo::after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+    }
+    
+    .seta-baixo:hover:after{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+    }
+
+    .logo1 img{
+        width: 50%;
+    }
+
+    .slider img{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+@media only screen and (max-width: 414px){
+    label{
+        line-height: 0px;
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .menu li{
+        width: 75vw;
+        font-size: 7vw;
+    }
+
+    .menu li a{
+        width: 75vw;
+        font-size: 7vw;
+    }
+
+    .seta-baixo::after{
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+        border-top: 7.5px solid white;
+    }
+    
+    .seta-baixo:hover:after{
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+        border-top: 7.5px solid white;
+    }
+
+    .logo1 img{
+        width: 60%;
+    }
+}
